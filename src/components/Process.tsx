@@ -3,27 +3,27 @@ import { useEffect, useRef, useState } from "react"
 const steps = [
   {
     number: "01",
-    title: "Слушаем",
+    title: "Диагностика",
     description:
-      "Мы начинаем с присутствия. Понимаем не только ваше пространство, но и то, как вы в нём живёте — ваши ритмы, потребности, стремления.",
+      "Анализируем текущие процессы управления, выявляем узкие места: где теряется информация, где решения запаздывают, где растёт объём ненужной отчётности.",
   },
   {
     number: "02",
-    title: "Видим",
+    title: "Проектирование",
     description:
-      "Вместе исследуем возможности. Мудборды, образцы материалов и пространственные концепции рождаются из нашего диалога.",
+      "Разрабатываем структуру информационного центра под специфику вашей организации: каналы обратной связи, дашборды показателей, систему фиксации проблем.",
   },
   {
     number: "03",
-    title: "Создаём",
+    title: "Внедрение",
     description:
-      "С намерением и заботой воплощаем видение в жизнь. Каждая деталь продумана, каждый элемент осмыслен.",
+      "Запускаем инфоцентр, обучаем команду работе с новыми инструментами. Процессы становятся прозрачными, совещания — короче, решения — быстрее.",
   },
   {
     number: "04",
-    title: "Живём",
+    title: "Развитие",
     description:
-      "Пространство готово, но путешествие продолжается. Мы следим, чтобы ваш дом развивался вместе с вами.",
+      "Сопровождаем работу центра, дорабатываем под изменения организации. Система растёт и адаптируется вместе с вами.",
   },
 ]
 
@@ -52,7 +52,6 @@ export function Process() {
     <section ref={sectionRef} id="process" className="py-32 lg:py-40 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
-          {/* Left Column - Sticky Header */}
           <div className="lg:col-span-4">
             <div className="lg:sticky lg:top-32">
               <p
@@ -60,28 +59,26 @@ export function Process() {
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
               >
-                Наш процесс
+                Преимущества
               </p>
               <h2
                 className={`font-serif text-4xl md:text-5xl font-light text-foreground mb-6 text-balance transition-all duration-1000 delay-200 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Путь
-                <span className="italic"> осознанности</span>
+                Как мы
+                <span className="italic"> работаем</span>
               </h2>
               <p
                 className={`text-muted-foreground leading-relaxed transition-all duration-1000 delay-300 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Настоящие пространства не создаются в спешке. Они раскрываются через вдумчивый процесс,
-                уважающий и архитектуру, и людей, которые будут здесь жить.
+                Эффективный инфоцентр не строится за один день. Мы проходим каждый этап вместе с командой клиента, обеспечивая устойчивый результат.
               </p>
             </div>
           </div>
 
-          {/* Right Column - Steps */}
           <div className="lg:col-span-8">
             <div className="space-y-0">
               {steps.map((step, index) => (
